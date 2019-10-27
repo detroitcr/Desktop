@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/hirebackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/r1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/layout1"
+            >
+
+            <Spinner android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:id="@+id/spinfortype"
+                android:gravity="center"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="0dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:text="Type of work:"
+                android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/spinfortype" android:layout_alignParentStart="true"
+                android:layout_marginStart="28dp" android:layout_alignParentTop="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            >
+
+            <Spinner android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:id="@+id/spinforclass"
+                android:gravity="center"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="0dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:text="Class/Year"
+                android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/spinforclass" android:layout_alignParentStart="true"
+                android:layout_marginStart="28dp" android:layout_alignParentTop="true"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/layout3"
+            android:layout_below="@+id/layout2"
+            >
+
+            <Spinner android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:id="@+id/spinforstream"
+                android:gravity="center"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="0dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:text="Stream"
+                android:layout_width="184dp"
+                android:layout_height="50dp"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/spinforstream" android:layout_alignParentStart="true"
+                android:layout_marginStart="28dp" android:layout_alignParentTop="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/r1"
+        android:id="@+id/r2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/text4"
+            android:text="In What time you need it to be completed"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text4"
+            android:hint="         Time in hours"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/r3"
+        android:layout_below="@+id/r2"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btnfollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QuiQle Nearby"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonstyle"
+            android:textColor="@color/white"/>
+        
+    </RelativeLayout>
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:layout_marginTop="70dp"
+       android:layout_below="@+id/r3">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginRight="100dp"
+           android:layout_marginLeft="20dp"
+           android:text="Busy? Find Someone to do your work!"
+           android:textSize="38sp"
+           android:textColor="@color/white"
+           android:fontFamily="cursive"
+           android:textStyle="bold"
+
+           />
+       
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

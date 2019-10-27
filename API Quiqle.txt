@@ -1,0 +1,65 @@
+					DOCUMENTATION OF API QUIQLE
+ Base url : "https://........"
+ Head developer : Dheeraj, Deepesh
+ Api developer : Mohit
+1.Login (user panel):
+		"register_user"
+		
+		Fields to be passed-
+		* phone_number:"836*****72"(string) 
+		* unique_id	  :"121*******56"(string)
+		* user_name   :"DH***AJ"(string)
+		* adress			  :"Hon-79>.....New Delhi"(string)
+		* lat_long	    :"79,80"(string)
+				{
+					lat, long of the permanent address 
+				}
+		* user_image  :"1.2.0."(Bitmap)
+				{
+					Bitmap to be converted in url and store 						in data base in separate table with 								columns as phone number, 			
+					unique_id,image_url 
+				}
+		Response:
+		* if registration success : Json having params 				{"result":"Success"}
+		* if registration success : Json having params
+				{result:"Not Success"
+				reason:"msg"( msg can be missing field 	
+												or network issues or the	 													other failure reasons
+											)
+				}
+-****-****-
+
+2.Fetch user info(user panel):
+			"fetch_user"
+
+
+		Fields to be passed-
+		* phone_number:"836*****72"(string) 
+		* unique_id	  :"121*******56"(string)
+
+		Response:
+		* if user found  : Json having params
+			{ result:"Found"
+				data:[{
+			phone_number:"836*****72"(string) 
+			unique_id	  :"121*******56"(string)
+			user_name   :"DH***AJ"(string)
+			adress			  :"Hon-79>.....New Delhi"(string)
+			lat_long	    :"79,80"(string)
+			image_url   :"https://"(string)
+									( using query from image table 	
+										using phone_number ,uniqure_id
+									)
+			}]
+			}
+		* if user not found  : Json having params
+			{ "result":"Not Found"
+				"data":[{
+			phone_number:"Not Found"(string) 
+			unique_id	  :"Not Found"(string)
+			user_name   :"Not Found"(string)
+			address			:"Not Found"(string)
+			lat_long	    :"Not Found"(string)
+			image_url   :"Not Found"(string)						
+			}]
+			}
